@@ -18,6 +18,17 @@ body {
   width: 195px;
   height: 50px;
 }
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  font-weight: 400;
+}
+.menu li:hover {
+  color: #6cb015;
+}
 .header-icon {
   display: flex;
   justify-content: center;
