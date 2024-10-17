@@ -26,6 +26,41 @@ body {
   list-style: none;
   font-weight: 400;
 }
+li {
+  list-style: none;
+}
+.menu li {
+  position: relative;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px 0px;
+  min-width: max-content;
+  font-size: 18px;
+  display: none;
+
+  z-index: 1;
+  font-weight: 400;
+  color: black;
+}
+.dropdown li:first-child {
+  margin-top: 25px;
+}
+.dropdown li {
+  padding: 10px 60px 10px 30px;
+}
+.dropdown li:hover {
+  background-color: #f8f9fa;
+  color: #6cb015;
+}
+.menu li:hover .dropdown {
+  display: block;
+}
 .menu li:hover {
   color: #6cb015;
 }
@@ -61,8 +96,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 .number1:after {
@@ -76,4 +111,14 @@ body {
 }
 .current:hover {
   background-color: #6c757d;
+}
+.hero {
+  position: relative;
+}
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 90px);
 }
